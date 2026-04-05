@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sabor & Fuego | Restaurante</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">Sabor & Fuego</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#reservas">Reservas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="overlay"></div>
+    <div class="container hero-content">
+      <h1>Una experiencia gastronómica inolvidable</h1>
+      <p>Sabores auténticos, ambiente elegante y platos preparados con pasión.</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn btn-primary">Ver Menú</a>
+        <a href="#reservas" class="btn btn-secondary">Reservar Ahora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIENVENIDA -->
+  <section class="welcome section">
+    <div class="container welcome-grid">
+      <div class="welcome-text">
+        <span class="section-tag">Bienvenidos</span>
+        <h2>Tradición, calidad y sabor en cada plato</h2>
+        <p>
+          En Sabor & Fuego combinamos ingredientes frescos, recetas cuidadosamente
+          seleccionadas y una presentación impecable para ofrecer una experiencia
+          culinaria memorable.
+        </p>
+        <p>
+          Nuestro restaurante está diseñado para quienes valoran la buena cocina,
+          el servicio excepcional y un ambiente sofisticado.
+        </p>
+        <a href="#reservas" class="btn btn-primary">Haz tu reserva</a>
+      </div>
+
+      <div class="welcome-images">
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="Interior elegante del restaurante">
+        </div>
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Plato gourmet del restaurante">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENÚ -->
+  <section class="menu section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nuestro Menú</span>
+        <h2>Platos destacados</h2>
+        <p>Una selección de nuestras especialidades favoritas.</p>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-card">
+          <h3>Filete Premium</h3>
+          <p>Corte jugoso acompañado de vegetales salteados y salsa especial de la casa.</p>
+          <span>$28</span>
+        </div>
+
+        <div class="menu-card">
+          <h3>Pasta Cremosa</h3>
+          <p>Pasta artesanal con salsa cremosa, queso parmesano y hierbas frescas.</p>
+          <span>$18</span>
+        </div>
+
+        <div class="menu-card">
+          <h3>Salmón a la Parrilla</h3>
+          <p>Salmón perfectamente cocinado con puré suave y toque cítrico.</p>
+          <span>$24</span>
+        </div>
+
+        <div class="menu-card">
+          <h3>Postre de la Casa</h3>
+          <p>Delicioso postre gourmet elaborado diariamente por nuestro chef.</p>
+          <span>$10</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE NOSOTROS -->
+  <section class="about section" id="nosotros">
+    <div class="container about-grid">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80" alt="Chef preparando comida">
+      </div>
+
+      <div class="about-text">
+        <span class="section-tag">Sobre Nosotros</span>
+        <h2>Pasión por la excelencia culinaria</h2>
+        <p>
+          Nuestro equipo está comprometido con crear momentos únicos a través de
+          una cocina refinada, un ambiente acogedor y un servicio que supera expectativas.
+        </p>
+        <p>
+          Cada detalle ha sido pensado para ofrecer una experiencia premium, ideal
+          para cenas familiares, encuentros especiales o celebraciones inolvidables.
+        </p>
+
+        <div class="about-features">
+          <div class="feature">
+            <i class="fas fa-utensils"></i>
+            <span>Ingredientes frescos</span>
+          </div>
+          <div class="feature">
+            <i class="fas fa-star"></i>
+            <span>Servicio de calidad</span>
+          </div>
+          <div class="feature">
+            <i class="fas fa-wine-glass"></i>
+            <span>Ambiente elegante</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVAS -->
+  <section class="reservation section" id="reservas">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Reservaciones</span>
+        <h2>Reserva tu mesa</h2>
+        <p>Completa el formulario y te contactaremos para confirmar tu reserva.</p>
+      </div>
+
+      <form class="reservation-form">
+        <div class="form-row">
+          <input type="text" placeholder="Nombre completo" required />
+          <input type="email" placeholder="Correo electrónico" required />
+        </div>
+
+        <div class="form-row">
+          <input type="date" required />
+          <input type="time" required />
+        </div>
+
+        <div class="form-row">
+          <input type="number" placeholder="Número de personas" min="1" required />
+          <input type="tel" placeholder="Teléfono" required />
+        </div>
+
+        <textarea placeholder="Mensaje adicional"></textarea>
+
+        <button type="submit" class="btn btn-primary">Enviar Reserva</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact section" id="contacto">
+    <div class="container contact-grid">
+      <div>
+        <span class="section-tag">Contacto</span>
+        <h2>Visítanos</h2>
+        <p><strong>Dirección:</strong> 123 Main Street, Louisville, KY</p>
+        <p><strong>Teléfono:</strong> +1 (502) 000-0000</p>
+        <p><strong>Email:</strong> info@saboryfuego.com</p>
+      </div>
+
+      <div>
+        <span class="section-tag">Horario</span>
+        <h2>Abiertos</h2>
+        <p>Lunes - Jueves: 12:00 PM - 10:00 PM</p>
+        <p>Viernes - Sábado: 12:00 PM - 11:30 PM</p>
+        <p>Domingo: 1:00 PM - 9:00 PM</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Sabor & Fuego. Todos los derechos reservados.</p>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
